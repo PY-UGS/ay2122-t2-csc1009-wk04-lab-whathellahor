@@ -1,7 +1,6 @@
 public class BMI{
     
     private static double poundsConversion = 0.45359237, inchesConversion = 0.0254;
-
     private double pounds, inches, bmiValue;
 
     public BMI(double pounds, double inches) {
