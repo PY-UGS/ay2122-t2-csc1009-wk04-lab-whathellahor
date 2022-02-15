@@ -1,4 +1,6 @@
 public class BMI{
+    
+    private static double poundsConversion = 0.45359237, inchesConversion = 0.0254;
 
     private double pounds, inches, bmiValue;
 
@@ -21,7 +23,7 @@ public class BMI{
     }
 
     public double calculateBMI(){
-        bmiValue = (pounds*0.45359237)/(Math.pow(inches*0.0254, 2));
+        bmiValue = (pounds*poundsConversion)/(Math.pow(inches*inchesConversion, 2));
         return bmiValue;
     }
 
